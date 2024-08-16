@@ -1,0 +1,25 @@
+.goods {
+  display: flex;
+  padding: 20px;
+}
+
+.filters {
+  flex: 1;
+  border-right: 1px solid #ddd;
+  padding-right: 20px;
+}
+
+.goods-list {
+  flex: 3;
+  padding-left: 20px;
+}
+
+.goods-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.goods-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
