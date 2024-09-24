@@ -1,27 +1,28 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import styles from './Tabs.module.scss';
+import style from './styles.module.scss';
 
 const Tabs = () => {
   return (
-    <div className={styles.tabs}>
+    <div className={style.tabs}>
       <NavLink
-        to="/users"
-        className={({ isActive }) => `${styles.tab} ${isActive ? styles.active : ''}`}
+        to={'/users'}
+        className={[style["tab"], style["active"]].join(" ")}
+      // className={({ isActive }) => `${style.tab} ${isActive ? style.active : ''}`}
       >
-        USERS
+        <span>USER</span>
       </NavLink>
       <NavLink
-        to="/goods"
-        className={({ isActive }) => `${styles.tab} ${isActive ? styles.active : ''}`}
+        to={'/users'}
+        className={({ isActive }) => `${style.tab} ${isActive ? style.active : ''}`}
       >
-        GOODS
+        <span>GOODS</span>
       </NavLink>
       <NavLink
-        to="/messages"
-        className={({ isActive }) => `${styles.tab} ${isActive ? styles.active : ''}`}
+        to={'/users'}
+        className={({ isActive }) => `${style.tab} ${isActive ? style.active : ''}`}
       >
-        MESSAGES
+        <span>MESSAGES</span>
       </NavLink>
     </div>
   );
